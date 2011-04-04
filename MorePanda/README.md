@@ -4,7 +4,7 @@ A theme for [LimeChat](http://limechat.net/mac/), based on the stock LimeLight t
 
 ## Screenshot
 
-![](http://github.com/morepanda/limechat-themes/raw/master/MorePanda/LimeChat-MorePanda.png)
+![](https://github.com/morepanda/limechat-themes/raw/master/MorePanda/LimeChat-MorePanda.png)
 
 ## Installation
 
