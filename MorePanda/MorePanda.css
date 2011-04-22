@@ -45,7 +45,7 @@ a {
 /* Nicks */
 
 .sender[type=normal] { color: #c4af75; font-weight: normal; margin-right: 1.5ex; }
-.sender[type=myself] { color: #8996A8; font-weight: normal; margin-right: 1.5ex; }
+.sender[type=myself] { color: #ffffdd; font-weight: normal; margin-right: 1.5ex; }
 
 .sender[type=normal][colornumber='0'] { color: #dca3a3; }
 .sender[type=normal][colornumber='1'] { color: #7f9f7f; }
@@ -68,7 +68,7 @@ a {
 /* Messages */
 
 .message[type=privmsg] { color: #cccccc; }
-.message[type=action] { color: inherit;}
+.message[type=action] { color: #cccccc; font-style: italic; }
 .message[type=notice] { color: #daefa3; }
 .message[type=system] { color: #808080; }
 .message[type=error] { color: #ca773f; font-weight: bold; }
@@ -150,37 +150,22 @@ body.normal .sender[type=normal], body.normal .sender[type=myself] {
 }
 
 body.normal div.line[type=action] .sender[type=normal], div.line[type=action] .sender[type=myself] {
-	//width: auto;
-  display: block;
-  float: left;
-  text-align: right;
-	//padding-left: 19ex;
-	//margin-right: 1ex;
-	//color: #fff;
-	background-color: transparent;
-  padding-right: 0.3ex;
-  width: 20ex;
-}
-
-sender.normal div.line[type=action] .sender[type=normal], div.line[type=action] {
-  color: #fff;
+	padding-right: 0.6ex;
+  font-style: italic;
 }
 
 body.normal div.line[type=action] .sender[type=normal]::before, div.line[type=action] .sender[type=myself]::before {
-	content: "•";
-	padding-right: 1.5ex;
+	/*content: "•";*/
+	content: "";
 }
 
-
 body.normal .line[highlight=true] > .sender[type=normal] {
-	//margin-left: -1ex;
 	padding-left: 0.2ex;
 	padding-right: 0.5ex;
 	-webkit-border-top-right-radius: 3px;
 	-webkit-border-bottom-right-radius: 3px;
 	line-height:3ex;
 	background-color: #3B434C;
-/*	background-color: #48515C;*/
 	color: #CF6A4C;
 }
 
@@ -196,8 +181,6 @@ body.normal .text span.message {
 //	content: " ★";
 //	color: #6E7B8D;
 //}
-
-
 
 .line[highlight=true] {
 	background-color: transparent;
